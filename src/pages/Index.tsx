@@ -86,8 +86,8 @@ const Index = () => {
           )}
         </nav>
 
-        {/* Rest of the hero section */}
-        <div className="max-w-4xl mx-auto text-center relative z-10 pt-32">
+        {/* Hero content */}
+        <div className="max-w-4xl mx-auto text-center relative z-10 pt-32 pb-24">
           <motion.h1 
             className="heading-xl mb-6"
             initial={{ opacity: 0, y: 20 }}
@@ -105,7 +105,7 @@ const Index = () => {
             Pro version of popular Astroship starter template made for startups. Built with Astro and Tailwind CSS.
           </motion.p>
           <motion.div 
-            className="flex flex-wrap justify-center gap-4 mb-16"
+            className="flex flex-wrap justify-center gap-4"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.4 }}
@@ -118,22 +118,6 @@ const Index = () => {
             </button>
           </motion.div>
         </div>
-
-        {/* Dashboard Preview */}
-        <motion.div
-          className="relative mx-auto max-w-5xl"
-          initial={{ opacity: 0, y: 40 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.7, delay: 0.6 }}
-        >
-          <div className="glass-panel rounded-2xl overflow-hidden shadow-xl">
-            <img 
-              src="/placeholder.svg" 
-              alt="Dashboard Preview" 
-              className="w-full h-auto"
-            />
-          </div>
-        </motion.div>
       </header>
 
       {/* Trusted By Section */}
