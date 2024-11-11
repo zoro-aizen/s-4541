@@ -35,13 +35,14 @@
 
   .button-primary {
     @apply px-6 py-3 bg-primary text-primary-foreground rounded-lg 
-           hover:bg-primary/90 transition-colors duration-200
-           font-medium tracking-wide;
+           hover:bg-primary/90 transition-all duration-200
+           font-medium tracking-wide shadow-sm hover:shadow-md;
   }
 
   .button-secondary {
-    @apply px-6 py-3 bg-secondary text-secondary-foreground rounded-lg 
-           hover:bg-secondary/90 transition-colors duration-200
-           font-medium tracking-wide;
+    @apply px-6 py-3 bg-accent-purple text-white rounded-lg 
+           hover:bg-accent-purple/90 transition-all duration-200
+           font-medium tracking-wide shadow-sm hover:shadow-md
+           backdrop-blur-sm border border-white/10;
   }
 }
