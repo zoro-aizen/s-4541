@@ -11,7 +11,7 @@ const Hero = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
         >
-          Create websites with Astroship™
+          Build Your Next SaaS Platform
         </motion.h1>
         <motion.p 
           className="text-xl text-neutral-600 mb-8"
@@ -19,7 +19,7 @@ const Hero = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.2 }}
         >
-          Pro version of popular Astroship starter template made for startups. Built with Astro and Tailwind CSS.
+          A powerful and flexible platform designed for modern businesses and startups.
         </motion.p>
         <motion.div 
           className="flex flex-wrap justify-center gap-4"
@@ -28,10 +28,10 @@ const Hero = () => {
           transition={{ duration: 0.5, delay: 0.4 }}
         >
           <button className="button-primary flex items-center gap-2">
-            Buy Template — $49
+            Get Started Now
           </button>
           <button className="px-6 py-3 border border-neutral-300 rounded-lg hover:bg-neutral-200/50 transition-colors">
-            Free Version
+            Learn More
           </button>
         </motion.div>
       </div>

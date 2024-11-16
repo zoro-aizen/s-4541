@@ -9,7 +9,7 @@ const Footer = () => {
               <span className="text-xl font-semibold">Lovely</span>
             </div>
             <p className="text-neutral-600 text-sm">
-              Beautiful Starter Template for Startups & SaaS
+              Modern SaaS Platform for Businesses
             </p>
           </div>
           
