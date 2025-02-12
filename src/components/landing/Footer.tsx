@@ -4,7 +4,7 @@ const Footer = () => {
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
           <div>
             <div className="flex items-center gap-2 mb-6">
-              <div className="w-8 h-8 bg-primary rounded-full"></div>
+              <div className="w-8 h-8 bg-primary rounded-full bg-[#7f8f7f]"></div>
               <span className="text-xl font-semibold">Milestone Map</span>
             </div>
             <p className="text-neutral-600 text-base">Map Your Future Today</p>
