@@ -1,3 +1,4 @@
+
 import { useState } from "react";
 import { Menu } from "lucide-react";
 import { motion } from "framer-motion";
@@ -9,8 +10,10 @@ const Navigation = () => {
     <nav className="fixed top-4 left-1/2 -translate-x-1/2 w-[95%] max-w-6xl z-50">
       <div className="glass-panel rounded-full px-6 py-4 flex items-center justify-between shadow-lg backdrop-blur-md">
         <div className="flex items-center gap-2">
-          <div className="w-8 h-8 bg-primary rounded-full"></div>
-          <span className="text-xl font-semibold">Lovely</span>
+          <div className="w-8 h-8 bg-[#0EA5E9] rounded-full flex items-center justify-center">
+            <div className="w-4 h-4 bg-[#F97316]" style={{ clipPath: 'polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%)' }}></div>
+          </div>
+          <span className="text-xl font-semibold">MilestoneMap</span>
         </div>
         
         {/* Desktop Navigation */}
