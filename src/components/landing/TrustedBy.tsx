@@ -1,18 +1,22 @@
+
 const TrustedBy = () => {
-  const companies = [
-    { name: "Stripe", className: "w-24" },
-    { name: "HubSpot", className: "w-28" },
-    { name: "Intercom", className: "w-28" },
-    { name: "Asana", className: "w-24" }
+  const trusted = [
+    { name: "Koushik Thalari", role: "Career Mentor", className: "w-28" },
+    { name: "Raneet Rot", role: "Professional Guide", className: "w-28" },
+    { name: "T. Sumanth", role: "Career Advisor", className: "w-28" }
   ];
 
   return (
     <section className="py-24 bg-neutral-200/50">
       <div className="container-padding">
-        <p className="text-center text-neutral-600 mb-12">Trusted by popular startups you know</p>
+        <p className="text-center text-neutral-600 mb-12">Trusted by career development experts</p>
         <div className="flex flex-wrap justify-center items-center gap-12">
-          {companies.map((company) => (
-            <div key={company.name} className={`${company.className} h-8 bg-neutral-400/20 rounded-lg`} />
+          {trusted.map((person) => (
+            <div key={person.name} className="text-center">
+              <div className={`${person.className} h-16 bg-neutral-400/20 rounded-full mx-auto mb-4`} />
+              <h3 className="font-medium text-primary">{person.name}</h3>
+              <p className="text-sm text-neutral-600">{person.role}</p>
+            </div>
           ))}
         </div>
       </div>
