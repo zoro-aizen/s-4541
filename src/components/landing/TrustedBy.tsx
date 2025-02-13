@@ -1,4 +1,6 @@
 
+import { UserRound } from "lucide-react";
+
 const TrustedBy = () => {
   const trusted = [
     { 
@@ -28,7 +30,9 @@ const TrustedBy = () => {
         <div className="flex flex-wrap justify-center items-center gap-12">
           {trusted.map((person) => (
             <div key={person.name} className="text-center">
-              <div className={`${person.className} h-16 ${person.bgColor} rounded-full mx-auto mb-4 transition-transform hover:scale-105`} />
+              <div className={`${person.className} h-16 ${person.bgColor} rounded-full mx-auto mb-4 transition-transform hover:scale-105 flex items-center justify-center`}>
+                <UserRound className="w-8 h-8 text-white" />
+              </div>
               <h3 className="font-medium text-primary text-sm">{person.name}</h3>
               <p className="text-xs text-neutral-600">{person.role}</p>
             </div>
