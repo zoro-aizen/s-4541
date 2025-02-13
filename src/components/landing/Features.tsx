@@ -1,15 +1,14 @@
+
 import { Check } from "lucide-react";
 import { Card } from "@/components/ui/card";
+
 const Features = () => {
   const features = [{
     title: "Smart Career Planning",
     description: "Plan your professional growth with AI-powered insights and personalized career roadmaps.",
     points: ["Personalized Career Paths", "Skill Gap Analysis", "Industry Insights"]
-  }, {
-    title: "Progress Tracking",
-    description: "Track your career development with comprehensive analytics and milestone achievements.",
-    points: ["Achievement Tracking", "Progress Analytics", "Goal Setting"]
   }];
+
   return <section className="py-24">
       <div className="container-padding">
         <div className="text-center mb-16">
@@ -50,4 +49,5 @@ const Features = () => {
       </div>
     </section>;
 };
+
 export default Features;
