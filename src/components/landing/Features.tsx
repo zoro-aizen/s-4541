@@ -43,7 +43,7 @@ const Features = () => {
             </div>
             <div className="flex-1">
               <Card className="glass-panel p-6 rounded-2xl">
-                <img alt={feature.title} className="w-full h-auto rounded-lg" src="/lovable-uploads/417ffe72-22a5-4e16-9d6d-a92cdfa21b15.png" />
+                <img alt={feature.title} className="w-full h-auto rounded-lg" src="/lovable-uploads/87eedefe-bc8a-48a2-b729-a547bcb77b4f.png" />
               </Card>
             </div>
           </div>)}
