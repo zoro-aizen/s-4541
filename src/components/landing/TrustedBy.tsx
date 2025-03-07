@@ -1,25 +1,29 @@
 
-import { UserRound } from "lucide-react";
+import { GraduationCap, UserCog, UserRound } from "lucide-react";
+import { Avatar, AvatarFallback } from "@/components/ui/avatar";
 
 const TrustedBy = () => {
   const trusted = [
     { 
       name: "Koushik Thalari", 
       role: "Career Mentor Dev", 
-      className: "w-28",
-      bgColor: "bg-[#9b87f5]"
+      className: "bg-[#9b87f5]",
+      icon: UserRound,
+      initials: "KT"
     },
     { 
       name: "Raneet Rot", 
       role: "Professional Guide Dev", 
-      className: "w-28",
-      bgColor: "bg-[#7E69AB]"
+      className: "bg-[#7E69AB]",
+      icon: UserCog,
+      initials: "RR"
     },
     { 
       name: "T. Sumanth", 
       role: "Career Advisor Dev", 
-      className: "w-28",
-      bgColor: "bg-[#6E59A5]"
+      className: "bg-[#6E59A5]",
+      icon: GraduationCap,
+      initials: "TS"
     }
   ];
 
@@ -30,9 +34,11 @@ const TrustedBy = () => {
         <div className="flex flex-wrap justify-center items-center gap-12">
           {trusted.map((person) => (
             <div key={person.name} className="text-center">
-              <div className={`${person.className} h-16 ${person.bgColor} rounded-full mx-auto mb-4 transition-transform hover:scale-105 flex items-center justify-center`}>
-                <UserRound className="w-8 h-8 text-white" />
-              </div>
+              <Avatar className={`w-16 h-16 ${person.className} mx-auto mb-4 transition-transform hover:scale-110 hover:shadow-md`}>
+                <AvatarFallback className="text-white flex items-center justify-center">
+                  <person.icon className="w-8 h-8" />
+                </AvatarFallback>
+              </Avatar>
               <h3 className="font-medium text-primary text-sm">{person.name}</h3>
               <p className="text-xs text-neutral-600">{person.role}</p>
             </div>
